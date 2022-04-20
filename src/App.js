@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Approve from "./component/Admin/AdminPanal.jsx/Approve";
 import ApprovePage from "./component/Admin/AdminPanal.jsx/ApprovePage";
 import QuizDetalis from "./component/Admin/AdminPanal.jsx/QuizDetalis";
@@ -12,6 +11,8 @@ import Studentlist_tutor from "./component/Admin/Tutor.jsx/Studentlist_tutor";
 import TutorList from "./component/Admin/Tutor.jsx/TutorList";
 import Navber from "./component/Navber";
 import CustomizedTables from "./component/Table";
+
+import "./App.css";
 
 function App() {
   return (

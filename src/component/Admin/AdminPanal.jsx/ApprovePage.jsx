@@ -6,7 +6,7 @@ import Navber from "../../Navber";
 import {  CheckCircleOutlined, CloseCircleOutlined  } from "@ant-design/icons";
 import { Button, Modal, Table, Tooltip } from "antd";
 import "antd/dist/antd.css";
-import "D:/V2_Project/QuizApp-main/src/App.css";
+import "../../../App.css";
 
 const ApprovePage = () => {
 

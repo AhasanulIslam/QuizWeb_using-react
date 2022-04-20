@@ -6,10 +6,13 @@ const Navber = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
   const logout = () => {
     localStorage.clear();
     window.location.href = "/";
   };
+  
+  
   return (
     <nav className="navbar">
       <div className="nav-container">

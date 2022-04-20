@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   //   const [values, setValues] = useState({
@@ -15,6 +17,17 @@ export default function Login() {
   //     email: "",
   //     password: "",
   // })
+
+  
+  useEffect(() => {
+    if (localStorage.getItem('user-info')) {
+      navigate("/approvepage")
+    }
+  }, [])
+
+  const validateForm = () => {
+
+  }
 
 
 
@@ -30,12 +43,6 @@ export default function Login() {
   // const [errors, setErrors] = useState({});
 
 
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem('user-info')) {
-      navigate("/approvepage")
-    }
-  }, [])
 
   async function login() {
     const item = { email, password };
