@@ -6,7 +6,7 @@
 }
 
 .container {
-  background: linear-gradient(135deg, #850c62, #f80759);
+  background: linear-gradient(135deg, #b9b3b3, #f5dfe6);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -21,7 +21,7 @@
 
 .app-wrapper {
   background-color: #fff;
-  min-width: 350px;
+  min-width: 650px;
   min-height: 650px;
   padding: 30px;
   box-sizing: 5px;
@@ -86,7 +86,7 @@ button:active {
   display: flex;
   justify-content: center;
   margin-top: 250px;
-  min-width: 370px;
+  min-width: 570px;
   color: #f80759;
 }
 

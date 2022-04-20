@@ -2,6 +2,7 @@ import { Card, Collapse } from "antd";
 import "antd/dist/antd.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Navber from "../../Navber";
 
 const { Panel } = Collapse;
 
@@ -16,8 +17,8 @@ const QuizDetalis = () => {
         },
       })
       .then((res) => {
-        console.log(res.data.quiz);
-        setUserData(res.data.quiz);
+        console.log(res.data.data);
+        setUserData(res.data.data);
         // console.log(
         //   "quiz",
         //   res.data.map((res) => {
@@ -34,7 +35,7 @@ const QuizDetalis = () => {
 
   return (
     <div className="full_div" style={{ marginTop: 16 }}>
-      <h1>User Data</h1>
+      <Navber/>
 
       {userData.length > 0 ? (
         userData.map(el => (
@@ -46,10 +47,10 @@ const QuizDetalis = () => {
           <h4 className="">Quizname : {el.quiz_name}</h4>
           <h4 className="">Total Question : {el.total_question}</h4>
           <h4 className="">Marks : {el.marks}</h4>
-          <h4 className="">Ranks : {el.ranks}</h4>
+          <h4 className="">Ranks : {el.rank}</h4>
           <h4 className="">
             {" "}
-            {el.questionlist.map((el) => (
+            {el.question.map((el) => (
               // <Card className="">
               //   Question : {el.question}
               //   <h4 className="">
@@ -68,16 +69,8 @@ const QuizDetalis = () => {
                   {el.id}
                   <Card bordered={false}>
                     <h4>Question : {el.question}</h4>
-
-                    <h4 className="">
-                      Correct Answer: {el.answer}
-                      <h4 className="">
-                        Option :{" "}
-                        {el.incorrect.map((ans) => (
-                          <p className="position">{ans}</p>
-                        ))}
-                      </h4>
-                    </h4>
+                    <h4>Quiz Answer : {el.answer}</h4>
+                    <h4>Given Answer : {el.given_answer}</h4>
                   </Card>
                 </Panel>
               </Collapse>

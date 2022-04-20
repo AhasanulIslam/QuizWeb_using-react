@@ -2,10 +2,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Approve from "./component/Admin/AdminPanal.jsx/Approve";
 import ApprovePage from "./component/Admin/AdminPanal.jsx/ApprovePage";
+import QuizDetalis from "./component/Admin/AdminPanal.jsx/QuizDetalis";
 import Reject from "./component/Admin/AdminPanal.jsx/Reject";
+import StudentList from "./component/Admin/AdminPanal.jsx/StudentList";
 import From from "./component/Admin/From";
 import Login from "./component/Admin/Login";
 import QuizFrom from "./component/Admin/Tutor.jsx/QuizFrom";
+import Studentlist_tutor from "./component/Admin/Tutor.jsx/Studentlist_tutor";
 import TutorList from "./component/Admin/Tutor.jsx/TutorList";
 import Navber from "./component/Navber";
 import CustomizedTables from "./component/Table";
@@ -17,17 +20,19 @@ function App() {
         {/* <From /> */}
         {/* <Login /> */}
         <Routes>
-          <Route exact path="/signup" element={<From />}></Route>
-          <Route exact path="/login" element={<Login />}></Route>
-          <Route exact path="/" element={<Login />}></Route>
-          <Route exact path="/nav" element={<Navber />}></Route>
-          <Route exact path="/adv" element={<ApprovePage />}></Route>
-          <Route exact path="/ap" element={<Approve />}></Route>
-          <Route exact path="/rej" element={<Reject />}></Route>
-          <Route exact path="/av" element={<CustomizedTables />}></Route>
-          <Route exact path="/tlist" element={<TutorList />}></Route>
-          <Route exact path="/qfm" element={<QuizFrom />}></Route>
-          <Route exact path="/qfm" element={<QuizFrom />}></Route>
+          <Route path="/signup" element={<From />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/nav" element={<Navber />}></Route>
+          <Route path="/approvepage" element={<ApprovePage />}></Route>
+          <Route path="/aprrove" element={<Approve />}></Route>
+          <Route path="/rej" element={<Reject />}></Route>
+          <Route path="/av" element={<CustomizedTables />}></Route>
+          <Route path="/tquizlist" element={<TutorList />}></Route>
+          <Route path="/quizfm" element={<QuizFrom />}></Route>
+          <Route path="/quizde" element={<QuizDetalis />}></Route>
+          <Route path="/studentlist" element={<StudentList />}></Route>
+          <Route path="/tutor_stulist" element={<Studentlist_tutor />}></Route>
 
 
 

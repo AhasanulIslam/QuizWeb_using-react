@@ -2,6 +2,7 @@ import { Card, Collapse } from "antd";
 import "antd/dist/antd.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import NavberTutor from "../../NavberTutor";
 
 const { Panel } = Collapse;
 
@@ -34,7 +35,7 @@ const TutorList = () => {
 
   return (
     <div className="full_div" style={{ marginTop: 16 }}>
-      <h1>User Data</h1>
+      <NavberTutor/>
 
       {userData.length > 0 ? (
         userData.map(el => (
@@ -46,7 +47,6 @@ const TutorList = () => {
           <h4 className="">Quizname : {el.quiz_name}</h4>
           <h4 className="">Total Question : {el.total_question}</h4>
           <h4 className="">Marks : {el.marks}</h4>
-          <h4 className="">Ranks : {el.ranks}</h4>
           <h4 className="">
             {" "}
             {el.questionlist.map((el) => (
