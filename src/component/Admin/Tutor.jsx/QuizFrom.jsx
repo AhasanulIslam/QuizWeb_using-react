@@ -91,7 +91,16 @@ const QuizFrom = () => {
       incorrect: values.incorrect2.split(","),
       answer: values.answer2,
     });
-    v 
+    values.questionlist.push({
+      id: 3,
+      question: values.question3,
+      incorrect: values.incorrect3.split(","),
+      answer: values.answer3,
+    });
+    values.questionlist.push({
+      id: 4,
+      question: values.question4,
+      incorrect: values.incorrect4.split(","),
       answer: values.answer4,
     });
     values.questionlist.push({
