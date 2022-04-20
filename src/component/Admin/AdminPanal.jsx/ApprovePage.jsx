@@ -1,7 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-// import Button from "react-bootstrap/Button";
-// import { FcApprove, FcCancel } from "react-icons/fc";
 import Navber from "../../Navber";
 import {  CheckCircleOutlined, CloseCircleOutlined  } from "@ant-design/icons";
 import { Button, Modal, Table, Tooltip } from "antd";

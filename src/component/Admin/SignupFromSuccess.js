@@ -1,5 +1,5 @@
 import React from 'react'
-import "D:/V2_Project/QuizApp-main/src/App.css";
+import "../../App.css";
 
 
 const SignupFromSuccess = () => {

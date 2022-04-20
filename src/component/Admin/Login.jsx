@@ -25,9 +25,6 @@ export default function Login() {
     }
   }, [])
 
-  const validateForm = () => {
-
-  }
 
 
 

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navber from "../../Navber";
 import axios from "axios";
-import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
-import { Button, Modal, Table } from "antd";
+import {  Table } from "antd";
 import "antd/dist/antd.css";
 import "../../../App.css"
 
