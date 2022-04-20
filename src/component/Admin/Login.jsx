@@ -7,12 +7,6 @@ import { Button, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
-
-
-
-
-
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

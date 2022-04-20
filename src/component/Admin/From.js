@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import SignupFrom from './SignupFrom'
-import "D:/V2_Project/QuizApp-main/src/App.css";
-
+import React, { useState } from 'react';
+import "../../App.css";
+import SignupFrom from './SignupFrom';
 import SignupFromSuccess from './SignupFromSuccess';
+
 
 const From = () => {
     const [fromIsSubmited, setFromIsSubmitted] = useState(false);

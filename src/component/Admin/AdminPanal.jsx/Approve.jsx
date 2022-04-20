@@ -3,7 +3,7 @@ import Navber from "../../Navber";
 import axios from "axios";
 import { Table } from "antd";
 import "antd/dist/antd.css";
-import "D:/V2_Project/QuizApp-main/src/App.css";
+import "../../../App.css";
 
 const Approve = () => {
   const [dataSource, setDataSource] = useState();
