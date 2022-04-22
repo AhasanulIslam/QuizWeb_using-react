@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Validation from './Validation';
 import cart from "./cart.png"
 import "./Login.css";
-import { useNavigate } from 'react-router-dom';
-
 
 
 
@@ -27,8 +25,7 @@ const SignupFrom = ({ submitForm }) => {
         })
     }
 
-    const navigate = useNavigate();
-
+ 
     const handleFromSubmit = (event) => {
         event.preventDefault();
         setErrors(Validation(values))
@@ -39,7 +36,7 @@ const SignupFrom = ({ submitForm }) => {
         .then(res => console.log(res.data))
         .catch(e => console.log(e))
 
-        navigate("/login")
+        // navigate("/login")
 
 
     }

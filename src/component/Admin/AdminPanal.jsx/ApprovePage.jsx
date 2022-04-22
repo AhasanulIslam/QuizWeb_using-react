@@ -115,11 +115,7 @@ const [isEditing, setIsEditing] = useState(false);
   //   }
 
   const columns = [
-    {
-      key: "1",
-      title: "ID",
-      dataIndex: "id",
-    },
+   
     {
       key: "2",
       title: "Name",
